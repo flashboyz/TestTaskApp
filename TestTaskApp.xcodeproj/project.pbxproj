@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57CB19E123142DBE6F6A73F1 /* Pods_TestTaskApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC962450154D4F1CF06E0B8 /* Pods_TestTaskApp.framework */; };
 		F8BB604C27F723390075D09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB604B27F723390075D09F /* AppDelegate.swift */; };
 		F8BB604E27F723390075D09F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB604D27F723390075D09F /* SceneDelegate.swift */; };
 		F8BB605027F723390075D09F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB604F27F723390075D09F /* ViewController.swift */; };
 		F8BB605327F723390075D09F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BB605127F723390075D09F /* Main.storyboard */; };
 		F8BB605527F7233C0075D09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BB605427F7233C0075D09F /* Assets.xcassets */; };
 		F8BB605827F7233C0075D09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BB605627F7233C0075D09F /* LaunchScreen.storyboard */; };
+		F8FFDCAC27F8E14C00A1B905 /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FFDCAB27F8E14C00A1B905 /* DrinkModel.swift */; };
+		F8FFDCB327FB810000A1B905 /* DrinkTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FFDCB227FB810000A1B905 /* DrinkTag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BC962450154D4F1CF06E0B8 /* Pods_TestTaskApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCC5DFD6BE2DC6535B62E90 /* Pods-TestTaskApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskApp.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskApp/Pods-TestTaskApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E5E9904081F5BE8FCCDEE884 /* Pods-TestTaskApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskApp.release.xcconfig"; path = "Target Support Files/Pods-TestTaskApp/Pods-TestTaskApp.release.xcconfig"; sourceTree = "<group>"; };
 		F8BB604827F723390075D09F /* TestTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BB604B27F723390075D09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8BB604D27F723390075D09F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		F8BB605427F7233C0075D09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8BB605727F7233C0075D09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8BB605927F7233C0075D09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8FFDCAB27F8E14C00A1B905 /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
+		F8FFDCB227FB810000A1B905 /* DrinkTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57CB19E123142DBE6F6A73F1 /* Pods_TestTaskApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2499D9FB255321B2EC1F36BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC962450154D4F1CF06E0B8 /* Pods_TestTaskApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79B925B5DBDC151227CB9685 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BCC5DFD6BE2DC6535B62E90 /* Pods-TestTaskApp.debug.xcconfig */,
+				E5E9904081F5BE8FCCDEE884 /* Pods-TestTaskApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F8BB603F27F723390075D09F = {
 			isa = PBXGroup;
 			children = (
 				F8BB604A27F723390075D09F /* TestTaskApp */,
 				F8BB604927F723390075D09F /* Products */,
+				79B925B5DBDC151227CB9685 /* Pods */,
+				2499D9FB255321B2EC1F36BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +86,8 @@
 			children = (
 				F8BB604B27F723390075D09F /* AppDelegate.swift */,
 				F8BB604D27F723390075D09F /* SceneDelegate.swift */,
+				F8FFDCAB27F8E14C00A1B905 /* DrinkModel.swift */,
+				F8FFDCB227FB810000A1B905 /* DrinkTag.swift */,
 				F8BB604F27F723390075D09F /* ViewController.swift */,
 				F8BB605127F723390075D09F /* Main.storyboard */,
 				F8BB605427F7233C0075D09F /* Assets.xcassets */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8BB605C27F7233C0075D09F /* Build configuration list for PBXNativeTarget "TestTaskApp" */;
 			buildPhases = (
+				A44D0C91E5E8DB124C8D9008 /* [CP] Check Pods Manifest.lock */,
 				F8BB604427F723390075D09F /* Sources */,
 				F8BB604527F723390075D09F /* Frameworks */,
 				F8BB604627F723390075D09F /* Resources */,
+				B67642FAA32CB00F949CF192 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +165,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A44D0C91E5E8DB124C8D9008 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTaskApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B67642FAA32CB00F949CF192 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskApp/Pods-TestTaskApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskApp/Pods-TestTaskApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskApp/Pods-TestTaskApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8BB604427F723390075D09F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FFDCAC27F8E14C00A1B905 /* DrinkModel.swift in Sources */,
 				F8BB605027F723390075D09F /* ViewController.swift in Sources */,
 				F8BB604C27F723390075D09F /* AppDelegate.swift in Sources */,
 				F8BB604E27F723390075D09F /* SceneDelegate.swift in Sources */,
+				F8FFDCB327FB810000A1B905 /* DrinkTag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +358,7 @@
 		};
 		F8BB605D27F7233C0075D09F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCC5DFD6BE2DC6535B62E90 /* Pods-TestTaskApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +387,7 @@
 		};
 		F8BB605E27F7233C0075D09F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E9904081F5BE8FCCDEE884 /* Pods-TestTaskApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
